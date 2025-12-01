@@ -92,6 +92,10 @@ a:hover {
     padding-bottom: 12em;
 }
 
+.padding-top-small {
+    padding-top: 8.125em;
+}
+
 /* - Section Margin
 --------------------------------------------------------------*/
 .margin-small {
@@ -712,4 +716,8 @@ iconify-icon.quote {
     .product-box {
         width: 50%;
     }
+}
+
+.logo {
+    max-width: 125px;
 }
