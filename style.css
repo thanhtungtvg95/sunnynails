@@ -822,6 +822,9 @@ h1 {
     .price-grid {
         grid-template-columns: 1fr;
     }
+    .pricing {
+        padding: 20px;
+    }
 }
 
 /* Why choose us*/
@@ -868,5 +871,10 @@ h1 {
 
     .section-title {
         font-size: 42px;
+    }
+
+    .container-lg {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
     }
 }
