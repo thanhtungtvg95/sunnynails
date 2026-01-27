@@ -78,8 +78,8 @@ a:hover {
 /* - Section Padding
 --------------------------------------------------------------*/
 .padding-small {
-    padding-top: 8.125em;
-    padding-bottom: 8.125em;
+    padding-top: 6.125em;
+    padding-bottom: 4.125em;
 }
 
 .padding-medium {
@@ -99,8 +99,8 @@ a:hover {
 /* - Section Margin
 --------------------------------------------------------------*/
 .margin-small {
-    margin-top: 8.125em;
-    margin-bottom: 8.125em;
+    margin-top: 6.125em;
+    margin-bottom: 4.125em;
 }
 
 .margin-medium {
@@ -138,6 +138,8 @@ h6 {
 
 .container-lg {
     max-width: 1750px;
+    padding-left: 7em;
+    padding-right: 7em;
 }
 
 
@@ -720,4 +722,151 @@ iconify-icon.quote {
 
 .logo {
     max-width: 125px;
+}
+
+.entry-item {
+    aspect-ratio: 1 / 1;
+}
+
+.entry-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.entry-item img {
+    transition: transform 0.3s ease;
+}
+
+.entry-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Pricing */
+.pricing {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 60px;
+    text-align: center;
+    background-color: white;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #7f8c8d;
+    padding-bottom: 6px;
+}
+
+.tab.active {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+}
+
+/* Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Price grid */
+.price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 80px;
+    text-align: left;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0d6cf;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.item span:last-child {
+    color: #c06c7b;
+    font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Why choose us*/
+
+#why-choose-us {
+    background: #fae4e4;
+    padding: 100px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    color: #2c3e50;
+    font-family: "Playfair Display", serif;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    text-align: center;
+}
+
+.feature-item img, .feature-item svg {
+    width: 90px;
+    height: auto;
+    margin-bottom: 30px;
+    color: #dc808e;
+}
+
+.feature-item h2 {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .features {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .section-title {
+        font-size: 42px;
+    }
 }
