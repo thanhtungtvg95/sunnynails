@@ -862,6 +862,8 @@ h1 {
     color: #2c3e50;
 }
 
+.mobile { display: none; }
+
 /* Responsive */
 @media (max-width: 992px) {
     .features {
@@ -877,4 +879,8 @@ h1 {
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
     }
+
+    .desktop { display: none !important; }
+    .mobile { display: block !important; }
 }
+
