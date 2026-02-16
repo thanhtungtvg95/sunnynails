@@ -890,11 +890,6 @@ h1 {
 
 
 .offer-section {
-    background: linear-gradient(
-            rgba(255, 240, 245, 0.9),
-            rgba(255, 240, 245, 0.9)
-    ),
-    url("background-flower.jpg") center/cover no-repeat;
     padding: 80px 20px;
 }
 
@@ -910,12 +905,12 @@ h1 {
     flex: 1;
 }
 
-.offer-text h2 {
-    font-size: 48px;
-    color: #2e3a59;
-    margin-bottom: 30px;
-    font-family: "Playfair Display", serif;
-}
+/*.offer-text h2 {*/
+/*    font-size: 48px;*/
+/*    color: #2e3a59;*/
+/*    margin-bottom: 30px;*/
+/*    font-family: "Playfair Display", serif;*/
+/*}*/
 
 .offer-list {
     list-style: none;
@@ -971,15 +966,8 @@ h1 {
 @media (max-width: 900px) {
     .offer-container {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .offer-list li {
-        padding-left: 0;
-    }
-
-    .offer-list li::before {
-        display: none;
+        /*text-align: center;*/
+        padding: 0;
     }
 }
 
