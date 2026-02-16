@@ -829,8 +829,12 @@ h1 {
 
 /* Why choose us*/
 
-#why-choose-us {
+#parking {
     background: #fae4e4;
+    padding: 100px 20px;
+}
+
+#why-choose-us {
     padding: 100px 20px;
 }
 
@@ -883,4 +887,195 @@ h1 {
     .desktop { display: none !important; }
     .mobile { display: block !important; }
 }
+
+
+.offer-section {
+    background: linear-gradient(
+            rgba(255, 240, 245, 0.9),
+            rgba(255, 240, 245, 0.9)
+    ),
+    url("background-flower.jpg") center/cover no-repeat;
+    padding: 80px 20px;
+}
+
+.offer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.offer-text {
+    flex: 1;
+}
+
+.offer-text h2 {
+    font-size: 48px;
+    color: #2e3a59;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+}
+
+.offer-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.offer-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #2e3a59;
+}
+
+.offer-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: #c07a88;
+}
+
+.offer-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #c07a88;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+.offer-btn:hover {
+    background: #a96572;
+}
+
+.offer-image {
+    flex: 1;
+}
+
+.offer-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .offer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer-list li {
+        padding-left: 0;
+    }
+
+    .offer-list li::before {
+        display: none;
+    }
+}
+
+.parking-section {
+    background: #fff6f8;
+    padding: 70px 20px;
+}
+
+.parking-container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.parking-title {
+    font-size: 38px;
+    color: #2e3a59;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.parking-title .icon {
+    margin-right: 8px;
+}
+
+.parking-location {
+    font-size: 18px;
+    color: #c07a88;
+    margin-bottom: 15px;
+}
+
+.parking-desc {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.parking-box {
+    background: #fff1f4;
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.parking-box h3 {
+    font-size: 22px;
+    color: #2e3a59;
+    margin-bottom: 20px;
+}
+
+.parking-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.parking-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 17px;
+    border-bottom: 1px dashed #e4bfc6;
+}
+
+.parking-list li:last-child {
+    border-bottom: none;
+}
+
+.parking-list strong {
+    color: #c07a88;
+}
+
+.parking-note {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.parking-note.friendly {
+    font-style: italic;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .parking-container {
+        padding: 35px 25px;
+    }
+
+    .parking-title {
+        font-size: 30px;
+    }
+}
+
 
